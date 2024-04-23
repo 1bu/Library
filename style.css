@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fffafa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDE9E6;
+    padding: 2rem;
+}
+
+.cont-body{
+    padding: 4rem;
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #2B303D;
+}
+
+.header h1{
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.modal-btn{
+    padding: 10px 20px;
+    margin:1rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+
+.modal-container{
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+
+input{
+    border: 0;
+    border-bottom: 2px solid black;
+    margin: 1rem;
+}
+
+select{
+    margin: 1rem;
+    padding: 5px;
+    
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.submit:hover{
+    background-color: #202D40;
+    color: #fffafa;
+}
+
+.close:hover{
+    background-color: #80002D;
+    color: #fffafa;
+}
+
+.book-body{
+    display: grid;
+    align-items: center;
+    grid-template: repeat(1,100%) / repeat(2,20%);
+    padding: 2rem 0;
+    border: 2px solid #2B303D;
+    border-radius: 15px;
+}
+
+.book-body h3{
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.read{
+    background-color: #202D40;
+    color: #fff;
+}
+
+.delete{
+    background-color: #80002D;
+    color: #fff;
+}

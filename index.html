@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <main class="container">
+        <div class="cont-body">
+            <div class="header">
+                <h1>Library</h1>
+                <h3><span id="bookCont">*</span> books in store</h3>
+            </div>
+            <div class="body">
+                <button id="open" class="modal-btn">New Book</button>
+                <!-------Modal----------->
+                <dialog id="modal-container" class="modal-container">
+                    <h2>New Book</h2>
+                    <form class="form-body" id="form" method="dialog">
+                        <div>
+                            <input type="text" name="Title" id="Title" placeholder="Title" required>
+                        </div>
+                        <div>
+                            <input type="text" name="Author" id="Author" placeholder="Author" required>
+                        </div>
+                        <div>
+                            <input type="number" name="Pages" id="Pages" placeholder="Number of Pages" required>
+                        </div>
+                        <div>
+                            <select id="Genre" name="Genre" required>
+                                <option value="">Select the genre</option>
+                                <option value="Self-Help">Self-Help</option>
+                                <option value="Cook">Cook</option>
+                                <option value="Fiction">Fiction</option>
+                                <option value="Education">Education</option>
+                            </select>
+                        </div>
+                        <button class="modal-btn submit" type="submit" id="submitBook">Add Book</button>
+                        <button class="modal-btn close" type="reset" id="close">Close</button>
+                    </form>
+                </dialog>
+                <div id ='book-container' class="book-container">
+                    <!--
+                <div class='book-card'>
+                   <div class="book-body">
+                        <h3 id="readText">Read</h3>
+                        <div class="book-info">
+                            <p id="book-title">TLOR</p>
+                            <p id="book-author">Tolkien</p>
+                            <p id="book-pages">120</p>
+                            <p id="book-genre">Fiction</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button id='read' class="modal-btn read">Read</button>
+                        <button id='delete' class="modal-btn delete">Delete</button>
+                    </div>
+                </div>
+                    -->
+                </div> 
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
